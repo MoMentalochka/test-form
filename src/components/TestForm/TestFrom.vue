@@ -71,7 +71,7 @@
       centered
       @ok="state.isResultModalOpen = false"
       >
-      <div v-for="i in Object.keys(formState)">
+      <div v-for="i in Object.keys(formState)" :key="i">
         {{i + ' - ' + formState[i as keyof TRegistrationForm]}}
       </div>
   </a-modal>
